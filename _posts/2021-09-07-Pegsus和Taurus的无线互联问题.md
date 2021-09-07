@@ -2,7 +2,7 @@
 title: Pegsus和Taurus的无线互联问题
 category: Harmony
 tags: HiSpark
-date: 2021-09-07
+date: 2021-09-06
 ---
 
 
@@ -46,14 +46,17 @@ make boards_rebuild
 
 - 制作文件系统，烧录
 
+
 ## P板的连接
 
 > 几个重要函数的调用
 
-### 太长不看版
+### 极简版
 
 - 修改SSID的宏定义`#define CONFIG_AP_SSID  "HiSpark_XXXXX"`
+
 ### 简略版
+
 ```c++
 #include<hi_wifi_api.h>
 /*初始化*/
@@ -67,7 +70,7 @@ hi_wifi_sta_scan()
  StaStartConnect()-> hi_wifi_sta_connect()
 ```
 
-## 详细版
+### 详细版
 
 [Hi3861 WiFi操作，热点连接](https://blog.csdn.net/aa120515692/article/details/110087044)
 
