@@ -3,6 +3,7 @@ title: SpringBoot中的AOP
 date: 2021-09-16
 category: Spring
 tags: AOP
+mermaid: true
 ---
 
 <center>组长的任务罢了</center>
