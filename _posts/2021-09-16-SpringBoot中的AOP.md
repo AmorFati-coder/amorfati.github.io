@@ -51,7 +51,7 @@ E-->|Exception|F(After throwing advice)
 
 ## 应用场景
 
-> 日志记录，性能统计，安全控制，权限管理，事务处理，异常处理，资源池管理
+> 日志记录，性能统计，安全控制，==权限管理==，==事务处理==，==异常处理==，资源池管理
 
 ## web层级
 
@@ -71,7 +71,7 @@ A[Controller] -->B(Service)
   E-->D
 
 ```
-
+## 
 
 ## 参考链接
 > [Spring AOP是什么？为什么要有Spring AOP？](https://www.zhihu.com/question/344440064)
