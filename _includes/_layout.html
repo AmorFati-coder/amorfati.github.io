@@ -81,28 +81,23 @@
   {% include _third-party/rating.html %}
   {% include _third-party/mathjax.html %}
   {% include _third-party/scroll-cookie.html %}
-  {% include _third-party/exturl.html %}
-  { % if site.mermaid % }
   <script>
-  function initMermaid() {
-    var config = {
-      startOnLoad: true,
-      theme: "dark",
-      flowchart:{
-        useMaxWidth: true,
-        htmlLabels: true
-      }
-    };
-    mermaid.initialize(config);
-    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-  }
-  </script>
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.0/mermaid.min.js"
-    async
-    onload="initMermaid()">
-  </script>
-  { % endif % }
+    function initMermaid() {
+      var config = {
+        startOnLoad: true,
+        theme: "default",
+        flowchart:{
+          useMaxWidth: true,
+          htmlLabels: true
+        }
+      };
+      mermaid.initialize(config);
+      window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    }
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.0/mermaid.min.js"
+      async
+      onload="initMermaid()">
+    </script>
 </body>
-
 </html>
