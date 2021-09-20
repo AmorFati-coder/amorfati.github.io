@@ -194,7 +194,11 @@
         // e_minsold=(e_hrsold-hrsold)*60;
         // minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
         // seconds=setzero(Math.floor((e_minsold-minsold)*60));
-        document.getElementById('days').innerHTML="              Survived For "+daysold+" days "+hrsold+" hours ";
+        var time = '';
+        var oriT = document.getElementById('days');
+        time = '<tr><td  style="height : 30px;width:100px;text-align: center;">'+ "Survived For"+daysold+" days "+hrsold+" hours "+'</td> </tr>';
+        oriT.innerHTML = time;
+
     }
     function setzero(i) {
         if (i<10) {

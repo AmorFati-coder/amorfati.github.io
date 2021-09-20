@@ -620,14 +620,14 @@ pace: true
 #pace-theme-center-circle
 #pace-theme-center-radar
 #pace-theme-center-simple
-#pace-theme-corner-indicator
+pace_theme: pace-theme-corner-indicator
 #pace-theme-fill-left
 #pace-theme-flash
 #pace-theme-loading-bar
 # pace_theme: pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-pace_theme: pace-theme-center-simple
+# pace_theme: pace-theme-center-simple
 # pace_theme: pace-theme-minimal
 
 # Canvas-nest
