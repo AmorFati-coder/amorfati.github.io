@@ -4,6 +4,7 @@ date: 2021-09-16
 category: Spring
 tags: AOP
 mermaid: true
+fireworks: true
 ---
 
 <center>组长的任务罢了</center>
