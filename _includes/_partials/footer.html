@@ -14,8 +14,8 @@
   &copy; {% if site.since and since != current %} {{ since }} - {% endif %}
   <span itemprop="copyrightYear">{{ current }}</span>
   <span class="author" itemprop="copyrightHolder">{{ site.author }}</span>
-  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
-    本站访客数:<span id="busuanzi_value_site_pv"></span>
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    Visitors: <span id="busuanzi_value_site_uv"></span>
   </span>
 </div>
 
@@ -38,7 +38,7 @@
         // seconds=setzero(Math.floor((e_minsold-minsold)*60));
         var time = '';
         var oriT = document.getElementById('days');
-        time = '<tr><td  style="height : 30px;width:100px;text-align: center;">'+ 'Survived For '+daysold+' days '+hrsold+' hours '+'</td> </tr>';
+        time = '<tr><td style="height : 30px;width:100px;text-align: center;"><font family = "KaiTi">'+ 'Survived For '+daysold+' days '+hrsold+' hours '+'</td> </tr>';
         oriT.innerHTML = time;
 
     }
