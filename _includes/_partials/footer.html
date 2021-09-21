@@ -19,7 +19,9 @@
   </span>
 </div>
 
-<div id="days"></div>
+<div id="days">
+
+</div>
     <script>
     function show_date_time(){
         window.setTimeout("show_date_time()", 1000);
@@ -36,11 +38,9 @@
         // e_minsold=(e_hrsold-hrsold)*60;
         // minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
         // seconds=setzero(Math.floor((e_minsold-minsold)*60));
-        var time = '';
-        var oriT = document.getElementById('days');
-        time = '<tr><td style="height : 30px;width:100px;text-align: center;"><font family = "KaiTi">'+ 'Survived For '+daysold+' days '+hrsold+' hours '+'</td> </tr>';
-        oriT.innerHTML = time;
-
+        var oriT = document.getElementById('days').innerHTML="<span style='font-size:12px; color:green;'>This is content</span>"
+        
+        // time = '<tr><td style="height : 30px;width:100px;text-align: center;"><font family = "KaiTi">'+ 'Survived For '+daysold+' days '+hrsold+' hours '+'</td> </tr>';
     }
     function setzero(i) {
         if (i<10) {
